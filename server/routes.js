@@ -1,4 +1,4 @@
-import renderAppToString from "./controllers/renderAppToString.js";
+import renderAppToString from "./controllers/renderAppToString/index.js";
 
 const routes = [
   {

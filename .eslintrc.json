@@ -1,6 +1,6 @@
 {
   "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "jest"],
   "rules": {
     "prettier/prettier": "error",
     "no-unused-vars": "warn",
@@ -10,6 +10,15 @@
     "object-shorthand": "off",
     "class-methods-use-this": "off",
     "import/extensions": ["error", "always", { "ignorePackages": true }],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-restricted-exports": [
+      "error",
+      {
+        "restrictedNamedExports": ["then"]
+      }
+    ]
+  },
+  "env": {
+    "jest/globals": true
   }
 }
