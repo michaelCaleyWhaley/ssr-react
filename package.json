@@ -5,7 +5,7 @@
   "main": "./server/index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack && node ./dist/server.cjs",
+    "start": "webpack && bun ./dist/server.cjs",
     "lint:js": "eslint .",
     "prepare": "husky install"
   },
